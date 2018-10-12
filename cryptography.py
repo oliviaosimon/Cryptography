@@ -15,8 +15,15 @@ for x in associations:
     
 #inputs
 toDo = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+message = input("Message: ")
+key = input("Key: ")
+
+#Possibilities
 if toDo == "e":
     #encrypt
+    
+    
+    
     
 elif toDo == "d":
     #decrypt

@@ -21,6 +21,8 @@ key = input("Key: ")
 #Possibilities
 if toDo == "e":
     #encrypt
+    while len(key) < len(message):
+        key.append(key)
     for unit in message:
         unitList = list(unit)
         for i in unitList:
@@ -31,8 +33,7 @@ if toDo == "e":
         for i in keyUnitList:
             key = associations.find(unit)
         print(key)
-    while len(key) < len(part):
-        key.append(key)
+
         
 
     

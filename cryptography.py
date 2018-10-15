@@ -21,8 +21,10 @@ key = input("Key: ")
 #Possibilities
 if toDo == "e":
     #encrypt
-    while len(key) < len(message):
-        key.append(key)
+    k = list(key)
+    if len(key) < len(message):
+        k.append(i for i in key)
+        print(k)
     for unit in message:
         unitList = list(unit)
         for i in unitList:

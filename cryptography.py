@@ -23,7 +23,7 @@ if toDo == "e":
     #encrypt
     k = list(key)
     if len(key) < len(message):
-        k.append(i for i in key)
+        k.append(list(i for i in key))
         print(k)
     for unit in message:
         unitList = list(unit)

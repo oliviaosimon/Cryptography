@@ -30,8 +30,10 @@ if toDo == "e":
         keyUnitList = list(unit)
         for i in keyUnitList:
             key = associations.find(unit)
-    z = zip(part, key)
-    print(z)
+        print(key)
+    while len(key) < len(part):
+        key.append(key)
+        
 
     
     

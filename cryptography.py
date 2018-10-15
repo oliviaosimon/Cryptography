@@ -26,7 +26,13 @@ if toDo == "e":
         for i in unitList:
             part = associations.find(i)
         print(part)
-    
+    for unit in key:
+        keyUnitList = list(unit)
+        for i in keyUnitList:
+            key = associations.find(unit)
+    z = zip(part, key)
+    print(z)
+
     
     
 elif toDo == "d":

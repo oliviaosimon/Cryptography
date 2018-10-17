@@ -1,7 +1,9 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Olivia Simon
+Credit: 
+    https://www.dotnetperls.com/round-python
+    
 
 Assignment:
 
@@ -29,8 +31,7 @@ if toDo == "e":
             part = associations.find(i)
         message_list.append(part)
     print(message_list)
-
-    for u in key:
+    for u in key:            #key division to list
         uList = list(u)
         for q in uList:
             partKey = associations.find(q)

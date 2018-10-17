@@ -56,7 +56,8 @@ if toDo == "e":
     print(combo_list)
     
     # output encrypted message
-    eWord = associations.find(combo_list)
+    for q in combo_list:
+        eWord = associations.find(q)
     print(list(eWord))
 
 

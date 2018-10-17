@@ -51,8 +51,9 @@ if toDo == "e":
     
     #equation
     combo_list = list()
-    for i in combo:
-         combo_list.append(x[i]+y[i])
+    
+    for a in combo:
+         combo_list.append(a[0]+a[1])
     print(combo_list)
 
 

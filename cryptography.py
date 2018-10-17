@@ -36,7 +36,7 @@ if toDo == "e":
             partKey = associations.find(q)
         key_list.append(partKey)
     print(key_list)
-    combo = zip(message_list, key_list)
+    combo = list(zip(message_list, key_list))
     print(combo)
     
     

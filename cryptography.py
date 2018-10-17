@@ -51,10 +51,13 @@ if toDo == "e":
     
     #equation
     combo_list = list()
-    
     for a in combo:
          combo_list.append(a[0]+a[1])
     print(combo_list)
+    
+    # output encrypted message
+    eWord = associations.find(combo_list)
+    print(list(eWord))
 
 
     

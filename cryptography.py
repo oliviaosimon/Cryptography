@@ -39,7 +39,7 @@ if toDo == "e":
             part = associations.find(i)
         message_list.append(part)
     print(message_list)
-    key = (key*divvy)
+    key = (key*divvy)        #makes key longer than length of message so zip later contains all that is required
     for u in key:            #key division to list
         uList = list(u)
         for q in uList:
@@ -49,6 +49,12 @@ if toDo == "e":
     combo = list(zip(message_list, key_list))
     print(combo)
     
+    #equation
+    combo_list = list()
+    for i in combo:
+         combo_list.append(x[i]+y[i])
+    print(combo_list)
+
 
     
     

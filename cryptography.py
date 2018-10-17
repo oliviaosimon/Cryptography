@@ -14,8 +14,6 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 #start code
 import math
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-#for x in associations:
-    #print(associations.find(x))
    
 #inputs
 toDo = input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -56,8 +54,10 @@ if toDo == "e":
     print(combo_list)
     
     #if bigger than associations list
-    if i in combo_list > len(associations):
+    if (i in combo_list) > (len(associations)):
         abs(i-(len(associations)))
+        
+        
     # output encrypted message
     final_list = list()
     for q in combo_list:

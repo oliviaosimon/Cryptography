@@ -57,7 +57,7 @@ if toDo == "e":
     
     # output encrypted message
     for q in combo_list:
-        print(associations[q])
+        print(''join.(associations[q]))
 
 
     

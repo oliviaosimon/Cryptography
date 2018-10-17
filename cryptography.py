@@ -21,19 +21,23 @@ key = input("Key: ")
 #Possibilities
 if toDo == "e":
     #encrypt
+    message_list = list()
+    key_list = list()
     for unit in message:
         unitList = list(unit)
         for i in unitList:
             part = associations.find(i)
-        print(part)
-        partMessage = list(int(part))
+        message_list.append(part)
+    print(message_list)
+
     for u in key:
         uList = list(u)
         for q in uList:
             partKey = associations.find(q)
         print(partKey)
-        partKey = list(int(partKey))
-    combo = zip(partMessage, partKey)
+        key_list.append(partKey)
+    print(key_list)
+    combo = zip(message_list, key_list)
     print(combo)
     
     

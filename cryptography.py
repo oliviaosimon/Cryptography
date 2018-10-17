@@ -59,7 +59,7 @@ if toDo == "e":
     final_list = list()
     for q in combo_list:
         final_list.append(associations[q])
-    print(final_list)
+    print(''.join(final_list))
 
 
     

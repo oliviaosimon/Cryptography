@@ -57,7 +57,7 @@ if toDo == "e":
     
     #if bigger than associations list
     if i in combo_list > len(associations):
-        abs(i-len(associations)
+        abs(i-(len(associations)))
     # output encrypted message
     final_list = list()
     for q in combo_list:

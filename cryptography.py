@@ -26,13 +26,13 @@ if toDo == "e":
         for i in unitList:
             part = associations.find(i)
         print(part)
-        partMessage = list(part)
+        partMessage = list(int(part))
     for u in key:
         uList = list(u)
         for q in uList:
             partKey = associations.find(q)
         print(partKey)
-        partKey = list(partKey)
+        partKey = list(int(partKey))
     combo = zip(partMessage, partKey)
     print(combo)
     

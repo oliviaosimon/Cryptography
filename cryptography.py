@@ -56,8 +56,10 @@ if toDo == "e":
     print(combo_list)
     
     # output encrypted message
+    final_list = list()
     for q in combo_list:
-        print(''.join(associations[q]))
+        final_list.append(associations[q])
+    print(final_list)
 
 
     

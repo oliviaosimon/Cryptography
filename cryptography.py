@@ -11,6 +11,8 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
+#start code
+import math
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 #for x in associations:
     #print(associations.find(x))
@@ -23,14 +25,21 @@ key = input("Key: ")
 #Possibilities
 if toDo == "e":
     #encrypt
+    
+        #fit key to match message
+    divvy = (len(message)/len(key))
+    divvy = math.ceil(divvy)           #math.ceil rounds up
+    
+    
     message_list = list()
     key_list = list()
-    for unit in message:
+    for unit in message:     #message division to list
         unitList = list(unit)
         for i in unitList:
             part = associations.find(i)
         message_list.append(part)
     print(message_list)
+    key = (key*divvy)
     for u in key:            #key division to list
         uList = list(u)
         for q in uList:
@@ -39,6 +48,8 @@ if toDo == "e":
     print(key_list)
     combo = list(zip(message_list, key_list))
     print(combo)
+    
+
     
     
 elif toDo == "d":

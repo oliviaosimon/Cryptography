@@ -17,13 +17,13 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
    
 #inputs
 toDo = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-message = input("Message: ")
-key = input("Key: ")
+
 
 #Possibilities
 if toDo == "e":
     #encrypt
-    
+    message = input("Message: ")
+    key = input("Key: ")
         #fit key to match message
     divvy = (len(message)/len(key))
     divvy = math.ceil(divvy)           #math.ceil rounds up
@@ -62,6 +62,9 @@ if toDo == "e":
     
 elif toDo == "d":
     #decrypt
+    
+    message = input("Message: ")
+    key = input("Key: ")
     
     #fit key to match message
     divvy = (len(message)/len(key))

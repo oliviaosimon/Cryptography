@@ -36,7 +36,6 @@ if toDo == "e":
         for i in unitList:
             part = associations.find(i)
         message_list.append(part)
-    print(message_list)
     key = (key*divvy)        #makes key longer than length of message so zip later contains all that is required
     for u in key:            #key division to list
         uList = list(u)
@@ -45,20 +44,17 @@ if toDo == "e":
         key_list.append(partKey)
     print(key_list)
     combo = list(zip(message_list, key_list))
-    print(combo)
-    
+
     #equation
     combo_list = list()
     for a in combo:
          combo_list.append(a[0]+a[1])
-    print(combo_list)
     
     #if bigger than associations list
     for x,val in enumerate(combo_list):
         if val > (len(associations)):
             combo_list[x] = abs((len(associations)-val))
 
-        
     # output encrypted message
     final_list = list()
     for q in combo_list:

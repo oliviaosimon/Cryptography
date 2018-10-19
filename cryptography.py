@@ -54,9 +54,9 @@ if toDo == "e":
     print(combo_list)
     
     #if bigger than associations list
-    for b in combo_list:
-        if b > (len(associations)):
-            combo_list[b] = abs(b-(len(associations)))
+    for x,val in enumerate(combo_list):
+        if val > (len(associations)):
+            combo_list[x] = abs(x-(len(associations)))
 
         
     # output encrypted message

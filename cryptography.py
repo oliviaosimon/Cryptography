@@ -71,7 +71,6 @@ elif toDo == "d":
     key_list = list()
     for unit in message:     #message division to list
         unitList = list(unit)
-        print(unitList)
         for i in unitList:
             part = associations.find(i)
         message_list.append(part)

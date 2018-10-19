@@ -42,7 +42,6 @@ if toDo == "e":
         for q in uList:
             partKey = associations.find(q)
         key_list.append(partKey)
-    print(key_list)
     combo = list(zip(message_list, key_list))
 
     #equation

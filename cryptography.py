@@ -47,25 +47,59 @@ if toDo == "e":
     #equation
     combo_list = list()
     for a in combo:
-         combo_list.append(a[0]+a[1])
+         combo_list.append(a[0]+a[1])         #adds message to key
     
     #if bigger than associations list
     for x,val in enumerate(combo_list):
         if val > (len(associations)):
             combo_list[x] = abs((len(associations)-val))
 
-    # output encrypted message
+    #output encrypted message
     final_list = list()
     for q in combo_list:
         final_list.append(associations[q])
     print(''.join(final_list))
-
-
-    
     
 elif toDo == "d":
     #decrypt
-    print("d")
+    
+    #fit key to match message
+    divvy = (len(message)/len(key))
+    divvy = math.ceil(divvy)           #math.ceil rounds up
+    
+    message_list = list()
+    key_list = list()
+    for unit in message:     #message division to list
+        unitList = list(unit)
+        print(unitList)
+        for i in unitList:
+            part = associations.find(i)
+        message_list.append(part)
+        print(message_list)
+    key = (key*divvy)        #makes key longer than length of message so zip later contains all that is required
+    for u in key:            #key division to list
+        uList = list(u)
+        for q in uList:
+            partKey = associations.find(q)
+        key_list.append(partKey)
+        print(key_list)
+    combo = list(zip(message_list, key_list))
+    print(combo)
+    #equation
+    combo_list = list()
+    for a in combo:
+         combo_list.append(a[0]-a[1])      #subtracts key from message
+         
+    #if outputs less than associations list
+    for x,val in enumerate(combo_list):
+        if val > (len(associations)):
+            combo_list[x] = (len(associations)+val)
+    
+    #output decrypted message
+    final_list = list()
+    for q in combo_list:
+        final_list.append(associations[q])
+    print(''.join(final_list))
     
 elif toDo == "q":
     print("Goodbye!")

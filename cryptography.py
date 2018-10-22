@@ -17,7 +17,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
   
 x = 0
 #inputs
-if x = 0:
+if x == 0:
     toDo = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 

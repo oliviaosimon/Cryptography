@@ -14,14 +14,17 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 #start code
 import math
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-   
+  
+x = 0
 #inputs
-toDo = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+if x = 0:
+    toDo = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 
 #Possibilities
 if toDo == "e":
     #encrypt
+    x += 1
     message = input("Message: ")
     key = input("Key: ")
         #fit key to match message
@@ -62,7 +65,7 @@ if toDo == "e":
     
 elif toDo == "d":
     #decrypt
-    
+    x += 1
     message = input("Message: ")
     key = input("Key: ")
     
@@ -105,6 +108,7 @@ elif toDo == "q":
     
 else:
     print("Did not understand command, try again.")
+    x = 0
 
 
 
